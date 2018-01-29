@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -5,7 +6,44 @@
   "HTML Tidy for HTML5 for Linux version 5.2.0" />
   <meta charset="utf-8" />
   <meta name="viewport" content=
-  "width=device-width, initial-scale=1.0, user-scalable=yes" />
+        "width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <style type="text/css" media="screen">
+    table {
+        display: table;
+        text-align: left;
+        width: 100%;
+        margin: 25px 5px;
+        border-collapse: collapse;
+    }
+    tr {
+        padding: 5px;
+    }
+    tr :hover {
+        background-color: #f5deb3;
+    }
+
+    tr .info {
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        padding: 5px;
+    }
+
+    tr .header {
+        height: 50px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    tr .abstract {
+        text-align: justify;
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        padding: 5px;
+        padding-bottom: 10px;
+    }
+
+  </style>
+
   <title>SPLS March 2018 at University of Glasgow</title>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
@@ -57,7 +95,150 @@
   </section>
   <section>
     <h1 id="programme">Programme</h1>
-    <p>To be Confirmed</p>
+    <table>
+      <tr>
+        <td class="header" colspan="3">1200-1300: Lunch</td>
+      </tr>
+      <tr>
+        <td class="header" colspan="3">1300-1400: Key Note (Session 0)</td>
+      </tr>
+      <tr>
+        <td class="info"> Nada Amin</td>
+        <td class="info" colspan="2"> University of Cambridge</td>
+      </tr>
+      <tr>
+        <td class="abstract">TBD</td>
+      </tr>
+      <tr>
+        <td class="header" colspan="3">1400-1430: Break 0</td>
+      </tr>
+      <tr>
+        <td class="header" colspan="3">1430-1600 Session 1</td>
+      </tr>
+      <tr >
+        <td class="info">1430-1500</td>
+        <td class="info">Simon Fowler (University of Edinburgh)</td>
+        <td class="info">Session Types without Tiers</td>
+      </tr>
+      <tr><td class="abstract" colspan="3"><p>Session types statically guarantee that concurrent communication  complies with a protocol. We give the first formal account of session
+ typing with exception handling in a functional programming language.
+ We define a core calculus which satisfies preservation and progress
+ properties, is deadlock free, data-race free, and terminating.
+
+ We provide the first implementation of session typing with exception
+ handling for a fully fledged functional programming language, by
+ extending the Links web programming language. Our implementation
+ draws on existing work on algebraic effects and effect handlers. We
+ illustrate our implementation through a chat server application for
+ the web, in which all communication occurs over session typed
+            channels and disconnections are handled gracefully.</p>
+        </td>
+      </tr>
+      <tr>
+        <td class="info">1500-1530</td>
+        <td class="info">Simon Gay (University of Glasgow)</td>
+        <td class="info">A New Linear Logic for Deadlock-Free Session-Typed Processes</td>
+      </tr>
+      <tr><td class="abstract" colspan="3"><p>The π-calculus, viewed as a core concurrent programming language, has
+been used as the target of much research on type systems for
+concurrency. We propose a new type system for deadlock-free session-
+typed π-calculus processes, by integrating two separate lines of
+work. The first is the propositions-as-types approach by Caires and
+Pfenning, which provides a linear logic foundation for session types
+and guarantees deadlock-freedom by forbidding cyclic process
+connections. The second is Kobayashi’s approach in which types are
+annotated with priorities so that the type system can check whether
+or not processes contain genuine cyclic dependencies between
+communication operations. We combine these two techniques for the
+first time, and define a new and more expressive variant of classical
+linear logic with a proof assignment that gives a session type system
+with Kobayashi-style priorities. This can be seen in three ways: (i)
+as a new linear logic in which cyclic structures can be derived and a
+cycle-elimination theorem generalises cut-elimination; (ii) as a
+logically- based session type system, which is more expressive than
+Caires and Pfenning’s; (iii) as a logical foundation for Kobayashi’s
+system, bringing it into the sphere of the propositions-as-types
+paradigm.</p></td>
+      </tr>
+      <tr>
+        <td class="info">1530-1600</td>
+        <td class="info">Bastian Hagedorn (University of Münster)</td>
+        <td class="info">High Performance Stencil Code Generation with Lift</td>
+      </tr>
+      <tr><td colspan="3" class="abstract">
+          Stencil computations are widely used from physical simulations to
+ machine-learning. They are embarrassingly parallel and are commonly
+ executed on modern parallel systems such as multi-core CPUs, Graphic
+ Processing Units (GPUs). Although stencil computations have been
+ extensively studied, optimizing them for increasingly diverse and
+ ever-changing hardware remains challenging even for performance
+ experts. Domain Specific Languages (DSLs) have raised the programming
+ abstraction and offer good performance. However, this abstraction
+ places the burden of optimizing stencil codes for the targeted
+ architectures on DSL implementers who have to write full-fledged
+ parallelizing compilers and optimizers for every architecture.
+
+ Lift has recently emerged as a promising approach to achieve
+ performance portability. It is based on a small set of reusable
+ parallel primitives that DSL writers can build upon. Lift’s key
+ novelty is in its encoding of optimizations as a system of extensible
+ rewrite rules which are used to explore the optimisation. So far,
+ Lift has focused on linear algebra operations and it it is an open
+ question if this approach is applicable for other domains.
+
+ In this talk, I demonstrate how complex multidimensional stencil
+ codes and optimizations such as tiling are expressible using
+ compositions of simple 1D Lift primitives. This allows us to build an
+ elegant optimizing compiler using rewriting without requiring
+ specialized domain- or architecture-specific solutions. By leveraging
+ existing Lift primitives and optimizations, we only require the
+ addition of two primitives and one rewrite rule to do so. Our results
+ show that this approach outperforms existing compiler approaches and
+ hand-tuned codes.
+        </td>
+      </tr>
+      <tr>
+        <td class="header" colspan="3">1600-1630: Break 1</td>
+      </tr>
+      <tr>
+        <td class="header" colspan="3">1630-1800: Session 2</td>
+      </tr>
+        <tr>
+        <td class="info">1630-1700</td>
+        <td class="info">Cristian Urlea (University of Glasgow)</td>
+        <td class="info">Optimal program variant generation for hybrid many-core systems</td>
+      </tr>
+      <tr><td class="abstract" colspan="3">
+tbc
+        </td>
+      </tr>
+      <tr>
+        <td class="info">1730-1800</td>
+        <td class="info">Yasir Alguwaifli (University of St Andrews)</td>
+        <td class="info">Energy Usage for Parallel Haskell Programs</td>
+      </tr>
+      <tr><td class="abstract" colspan="3">
+Understanding and controlling software energy usage is an increasing
+concern in many settings. To date, there has been little work,
+ however, on understanding how energy relates to high level
+programming constructs, or on dealing with real parallel systems,
+especially at a significant scale. In this paper, we measure and
+correlate the energy usage of several parallel Haskell programs
+against execution time and other runtime system (RTS) metrics,
+produced using the standard Haskell compiler, GHC. We show how energy
+usage relates to the number of cores, giving performance results on
+a recent Intel Xeon x86 system that has 28 physical cores
+and supports hyperthreading. From these results, we construct
+an energy model and relate this model to the parallel structure of
+the program source. Given a suitable structural model of parallelism,
+this provides information that can be used to predict the energy
+
+        </td>
+      </tr>
+      <tr>
+        <td class="header" colspan="3">1800+ Pub/Dinner</td>
+      </tr>
+    </table>
   </section>
   <section>
     <h1 id="venue-travel">Venue Travel</h1>

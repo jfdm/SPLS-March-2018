@@ -131,18 +131,9 @@
         <td class="info">Simon Fowler (University of Edinburgh)</td>
         <td class="title">Session Types without Tiers</td>
       </tr>
-      <tr><td class="abstract" colspan="3"><p>Session types statically guarantee that concurrent communication  complies with a protocol. We give the first formal account of session
- typing with exception handling in a functional programming language.
- We define a core calculus which satisfies preservation and progress
- properties, is deadlock free, data-race free, and terminating.
-
- We provide the first implementation of session typing with exception
- handling for a fully fledged functional programming language, by
- extending the Links web programming language. Our implementation
- draws on existing work on algebraic effects and effect handlers. We
- illustrate our implementation through a chat server application for
- the web, in which all communication occurs over session typed
-            channels and disconnections are handled gracefully.</p>
+      <tr><td class="abstract" colspan="3"><p>
+        Session types statically guarantee that concurrent communication  complies with a protocol. We give the first formal account of session typing with exception handling in a functional programming language. We define a core calculus which satisfies preservation and progress properties, is deadlock free, data-race free, and terminating. We provide the first implementation of session typing with exception handling for a fully fledged functional programming language, by extending the Links web programming language. Our implementation draws on existing work on algebraic effects and effect handlers. We illustrate our implementation through a chat server application for the web, in which all communication occurs over session typed channels and disconnections are handled gracefully.
+      </p>
         </td>
       </tr>
       <tr>
@@ -150,7 +141,8 @@
         <td class="info">Simon Gay (University of Glasgow)</td>
         <td class="title">A New Linear Logic for Deadlock-Free Session-Typed Processes</td>
       </tr>
-      <tr><td class="abstract" colspan="3"><p>The π-calculus, viewed as a core concurrent programming language, has
+      <tr><td class="abstract" colspan="3"><p>
+The π-calculus, viewed as a core concurrent programming language, has
 been used as the target of much research on type systems for
 concurrency. We propose a new type system for deadlock-free session-
 typed π-calculus processes, by integrating two separate lines of
@@ -220,7 +212,11 @@ paradigm.</p></td>
         <td class="title">Optimal program variant generation for hybrid many-core systems</td>
       </tr>
       <tr><td class="abstract" colspan="3">
-        TBD
+        High-performance computing is turning towards heterogeneous solutions in the search for performance and power-efficiency. Building compute nodes with multi-core CPUs, GPUs and
+especially FPGAs allows for a large degree of configurability. However this brings with it the challenge of finding the optimum configuration. 
+The TyTra compiler seeks to optimise streaming dataflow applications, on heterogeneous platforms, with the help of type transformations and an accurate cost/performance model.
+From a source program, TyTra generates multiple program variants, costs them and selects the best performing variant.
+This work looks at ways to optimise program variant generation and selection in TyTra. We do this by leveraging the structure of the applications considered as well as constraints imposed by the target hardware architecture. We present our approach to an optimal program variant selection algorithm that relies on pruning to meet resource constraints.
         </td>
       </tr>
       </tr>
@@ -252,8 +248,7 @@ a recent Intel Xeon x86 system that has 28 physical cores
 and supports hyperthreading. From these results, we construct
 an energy model and relate this model to the parallel structure of
 the program source. Given a suitable structural model of parallelism,
-this provides information that can be used to predict the energy
-
+this provides information that can be used to predict the energy.
         </td>
       </tr>
       <tr>

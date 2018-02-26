@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content=
         "width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
   <style type="text/css" media="screen">
     body {
       font-family: 'Fira Sans', sans-serif;
@@ -53,7 +53,7 @@
 
   </style>
 
-  <title>SPLS March 2018 at University of Glasgow</title>
+  <title>SPLS March 2018 in Glasgow</title>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
@@ -62,10 +62,8 @@
   <div style="width: 80%; margin-left: auto; margin-right: auto;">
   <center>
   <header>
-    <h1 class="title">SPLS March 2018 @ University of Glasgow</h1>
+    <h1 class="title">SPLS March 2018 in Glasgow</h1>
   </header>
-    <a href="http://www.glasgow.ac.uk"><img src=
-    "image/uog-logo.jpg" alt="University of Glasgow Logo" /></a>
     <a href=
     "http://www.sicsa.ac.uk/wp-content/themes/sicsa/images/sicsa-logo.png">
     <img src="image/sicsa-logo.jpg" alt="SICSA Logo" /></a>
@@ -74,20 +72,14 @@
     <p>The <a href=
     "http://www.dcs.gla.ac.uk/research/spls/"><em>Scottish
     Programming Languages Seminar</em> (SPLS)</a> is an open forum
-    for researchers interested in programming languages to
-    discussion programming languages. Held every few months, the
+    for researchers interested in programming languages. Held every few months, the
     first meeting of the 2018 season will be at:</p>
     <center>
-      <p><a href="https://www.gla.ac.uk/schools/computing/">School
-      of Computing Science</a>, <a href=
-      "https://www.gla.ac.uk/">University of Glasgow</a></p>
+      <p><a href="https://www.abodeglasgow.co.uk/">ABode Hotel</a>, in Glasgow.</p>
       <p>on</p>
       <p><strong>[2018-03-07 Wed 12:00-18:00]</strong></p>
     </center>
-    <p>We are happy to announce that the invited speaker will be
-    <a href="https://www.cl.cam.ac.uk/~na482/">Nada Amin</a> from
-    the <a href="https://www.cl.cam.ac.uk/~na482/">University of
-    Cambridge.</a></p>
+
     <p>The programme for the meeting will be detailed below with
     more information being published via the <a href=
     "https://mr1.dcs.gla.ac.uk/mailman/listinfo/spls">SPLS Mailing
@@ -110,24 +102,9 @@
         <td class="header" colspan="3">1200-1300: Lunch</td>
       </tr>
       <tr>
-        <td class="header" colspan="3">1300-1400: Key Note (Session 0)</td>
-      </tr>
-      <tr>
-        <td class="info">1300-1400</td>
-        <td class="info"> Nada Amin (University of Cambridge)</td>
-        <td class="title"> TBD</td>
-      </tr>
-      <tr>
-        <td class="abstract" colspan="3">TBD</td>
-      </tr>
-      <tr>
-        <td class="header" colspan="3">1400-1430: Break 0</td>
-      </tr>
-      <tr>
-        <td class="header" colspan="3">1430-1600 Session 1</td>
-      </tr>
+        <td class="header" colspan="3">1300-1400: Session 0</td>
       <tr >
-        <td class="info">1430-1500</td>
+        <td class="info">1300-1330</td>
         <td class="info">Simon Fowler (University of Edinburgh)</td>
         <td class="title">Session Types without Tiers</td>
       </tr>
@@ -137,7 +114,7 @@
         </td>
       </tr>
       <tr>
-        <td class="info">1500-1530</td>
+        <td class="info">1330-1400</td>
         <td class="info">Simon Gay (University of Glasgow)</td>
         <td class="title">A New Linear Logic for Deadlock-Free Session-Typed Processes</td>
       </tr>
@@ -164,12 +141,18 @@ system, bringing it into the sphere of the propositions-as-types
 paradigm.</p></td>
       </tr>
       <tr>
-        <td class="info">1530-1600</td>
+        <td class="header" colspan="3">1400-1430: Break 0</td>
+      </tr>
+      <tr>
+        <td class="header" colspan="3">1430-1500: Session 1</td>
+      </tr>
+      <tr>
+        <td class="info">1500-1530</td>
         <td class="info">Bastian Hagedorn (University of Münster)</td>
         <td class="title">High Performance Stencil Code Generation with Lift</td>
       </tr>
       <tr><td colspan="3" class="abstract">
-          Stencil computations are widely used from physical simulations to
+          <p>Stencil computations are widely used from physical simulations to
  machine-learning. They are embarrassingly parallel and are commonly
  executed on modern parallel systems such as multi-core CPUs, Graphic
  Processing Units (GPUs). Although stencil computations have been
@@ -180,16 +163,16 @@ paradigm.</p></td>
  places the burden of optimizing stencil codes for the targeted
  architectures on DSL implementers who have to write full-fledged
  parallelizing compilers and optimizers for every architecture.
-
- Lift has recently emerged as a promising approach to achieve
+          </p>
+<p> Lift has recently emerged as a promising approach to achieve
  performance portability. It is based on a small set of reusable
  parallel primitives that DSL writers can build upon. Lift’s key
  novelty is in its encoding of optimizations as a system of extensible
  rewrite rules which are used to explore the optimisation. So far,
  Lift has focused on linear algebra operations and it it is an open
  question if this approach is applicable for other domains.
-
- In this talk, I demonstrate how complex multidimensional stencil
+</p>
+<p> In this talk, I demonstrate how complex multidimensional stencil
  codes and optimizations such as tiling are expressible using
  compositions of simple 1D Lift primitives. This allows us to build an
  elegant optimizing compiler using rewriting without requiring
@@ -197,17 +180,11 @@ paradigm.</p></td>
  existing Lift primitives and optimizations, we only require the
  addition of two primitives and one rewrite rule to do so. Our results
  show that this approach outperforms existing compiler approaches and
- hand-tuned codes.
+            hand-tuned codes.</p>
         </td>
       </tr>
       <tr>
-        <td class="header" colspan="3">1600-1630: Break 1</td>
-      </tr>
-      <tr>
-        <td class="header" colspan="3">1630-1800: Session 2</td>
-      </tr>
-        <tr>
-        <td class="info">1630-1700</td>
+        <td class="info">1530-1600</td>
         <td class="info">Cristian Urlea (University of Glasgow)</td>
         <td class="title">Optimal program variant generation for hybrid many-core systems</td>
       </tr>
@@ -217,57 +194,45 @@ especially FPGAs allows for a large degree of configurability. However this brin
 The TyTra compiler seeks to optimise streaming dataflow applications, on heterogeneous platforms, with the help of type transformations and an accurate cost/performance model.
 From a source program, TyTra generates multiple program variants, costs them and selects the best performing variant.
 This work looks at ways to optimise program variant generation and selection in TyTra. We do this by leveraging the structure of the applications considered as well as constraints imposed by the target hardware architecture. We present our approach to an optimal program variant selection algorithm that relies on pruning to meet resource constraints.
+          <p></p>
         </td>
+      </tr>
+
+      <tr>
+        <td class="header" colspan="3">1600-1630: Break 1</td>
+      </tr>
+      <tr>
+        <td class="header" colspan="3">1630-1730: Session 2</td>
       </tr>
       </tr>
         <tr>
-        <td class="info">1700-1730</td>
+        <td class="info">1630-1700</td>
         <td class="info">Philip Ginsbach (University of Edinburgh)</td>
         <td class="title">CAnDL: A Domain Specific Language for Compiler Analysis</td>
       </tr>
       <tr><td class="abstract" colspan="3">
-        TBD
+          <p>Optimizing compilers require sophisticated program analysis and transformations to exploit modern hardware. Implementing the appropriate analysis for a compiler optimization is a time consuming activity. For example, in LLVM, tens of thousands of lines of code are required to detect appropriate places to apply peephole optimizations. It is a barrier to the rapid prototyping and evaluation of new optimizations. In this paper we present the Compiler Analysis Description Language (CAnDL), a domain specific language for compiler analysis. CAnDL is a constraint based language that operates over LLVM's intermediate representation. The compiler developer writes a CAnDL program, which is then compiled by the CAnDL compiler into a C++ LLVM pass. It provides a uniform manner in which to describe compiler analysis and can be applied to a range of compiler analysis problems, reducing code length and complexity. We implemented and evaluated CAnDL on a number of real world use cases: eliminating redundant operations; graphics code optimization; identifying static control flow regions. In all cases were we able to express the analysis more briefly than competing approaches. </p>
         </td>
       </tr>
       <tr>
-        <td class="info">1730-1800</td>
+        <td class="info">1700-1730</td>
         <td class="info">Yasir Alguwaifli (University of St Andrews)</td>
         <td class="title">Energy Usage for Parallel Haskell Programs</td>
       </tr>
       <tr><td class="abstract" colspan="3">
-Understanding and controlling software energy usage is an increasing
-concern in many settings. To date, there has been little work,
- however, on understanding how energy relates to high level
-programming constructs, or on dealing with real parallel systems,
-especially at a significant scale. In this paper, we measure and
-correlate the energy usage of several parallel Haskell programs
-against execution time and other runtime system (RTS) metrics,
-produced using the standard Haskell compiler, GHC. We show how energy
-usage relates to the number of cores, giving performance results on
-a recent Intel Xeon x86 system that has 28 physical cores
-and supports hyperthreading. From these results, we construct
-an energy model and relate this model to the parallel structure of
-the program source. Given a suitable structural model of parallelism,
-this provides information that can be used to predict the energy.
+          <p>Understanding and controlling software energy usage is an increasing concern in many settings. To date, there has been little work, however, on understanding how energy relates to high level programming constructs, or on dealing with real parallel systems, especially at a significant scale. We measure and correlate the energy usage of several parallel Haskell programs against execution time and other runtime system (RTS) metrics, produced using the standard Haskell compiler, GHC. We show how energy usage relates to the number of cores, giving performance results on a recent Intel Xeon x86 system that has 28 physical cores and supports hyperthreading. From these results, we construct an energy model and relate this model to the metrics of the program in parallel execution. Given a suitable structural model of parallelism, this provides information that has the potential to predict energy.</p>
         </td>
       </tr>
       <tr>
-        <td class="header" colspan="3">1800+ Pub/Dinner</td>
+        <td class="header" colspan="3">1730+ Pub/Dinner</td>
       </tr>
     </table>
   </section>
   <section>
     <h1 id="venue-travel">Venue Travel</h1>
-    <p>The event will be held in the Sir Alwyn Williams Building on
-    <strong>Level 5</strong>.</p>
-    <p>A <a href=
-    "http://www.openstreetmap.org/?mlat=55.87392&amp;mlon=-4.29181#map=18/55.87392/-4.29181">
-    map is available</a> showing the buildings precise
-    location.</p>
-    <p><a href=
-    "https://www.gla.ac.uk/schools/computing/contact/">More
-    information about travelling to the School of Computing is
-    available</a></p>
+    <p>The event will be held at:</p>
+    <center><p><a href="https://www.abodeglasgow.co.uk">ABode Hotel in Glasgow; 129 Bath St; G2 2SZ</a></p></center>
+    <p>Directions are <a href="https://www.abodeglasgow.co.uk/location/directions">available</a>, and a <a href="https://www.google.co.uk/maps/place/ABode+Glasgow/@55.8640827,-4.2604066,19z/data=!4m12!1m6!3m5!1s0x4888442734b407b3:0xbd6c0ae88b40da25!2sABode+Glasgow!8m2!3d55.8640782!4d-4.2598675!3m4!1s0x4888442734b407b3:0xbd6c0ae88b40da25!8m2!3d55.8640782!4d-4.2598675?dcr=0">map reference too</a>.</p>
   </section>
   <section>
     <h1 id="contact">Contact</h1>

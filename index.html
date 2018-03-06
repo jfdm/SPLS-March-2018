@@ -144,7 +144,7 @@ paradigm.</p></td>
         <td class="header" colspan="3">1400-1430: Break 0</td>
       </tr>
       <tr>
-        <td class="header" colspan="3">1430-1500: Session 1</td>
+        <td class="header" colspan="3">1430-1600: Session 1</td>
       </tr>
       <tr>
         <td class="info">1430-1500</td>
@@ -197,16 +197,55 @@ This work looks at ways to optimise program variant generation and selection in 
           <p></p>
         </td>
       </tr>
+      <tr>
+        <td class="info">1530-1600</td>
+        <td class="info">Paul V. Gratz (Texas A &amp; M University)</td>
+        <td class="title">Coordinated Speculation in the Memory System</td>
+      </tr>
+      <tr><td class="abstract" colspan="3">
+        The scaling of multi-core processors poses a challenge to memory                   
+system design.  Increased cores generate more accesses to shared                   
+caches causing conflict misses as unrelated processes compete for the              
+same cache sets.  Each miss represents significant waste: wasted time              
+as the requested data is transferred from a slow main memory, wasted               
+energy and bandwidth when transferring cache block words that will                 
+ultimately go unused.  In this talk I will explore the means to                    
+leverage memory reference speculation to reduce waste and improve                  
+efficiency in multi-core processor memory systems.  In particular, we              
+will examine memory reference speculation in the context of holistic               
+cache management, merging data prefetching and replacement policy.  I              
+will outline a novel confidence path-based prefetching scheme, the                 
+Signature Path Prefetcher (SPP).  SPP uses a compressed history based              
+signature that accurately predicts complex address patterns, allowing
+the prefetcher to run far ahead of the current demand stream.  SPP
+uses a dynamically constructed path confidence in its prediction to
+adaptively throttle itself on a per-prefetch stream basis.  Unlike
+other algorithms, SPP tracks complex patterns across physical page
+boundaries and continues prefetching as soon as they move to new
+pages.  Memory reference speculation can be leveraged far beyond data
+prefetching. In particular, the path confidence developed in SPP
+represents a proxy of use distance for future memory access, providing
+new possibilities to integrate memory management techniques at
+different levels of cache.  In the second half of my talk I will
+outline how the path confidence derived from the SPP prefetcher can be
+used as a direct representation of reuse distance to inform
+replacement policy as well as cache-level placement in the larger
+cache hierarchy.  Finally, I will discuss how similar mechanisms can
+be used for page placement, prefetching and replacement in systems
+incorporating emerging non-volatile memory technologies.
+          <p></p>
+        </td>
+      </tr>
 
       <tr>
-        <td class="header" colspan="3">1530-1600: Break 1</td>
+        <td class="header" colspan="3">1600-1630: Break 1</td>
       </tr>
       <tr>
-        <td class="header" colspan="3">1600-1700: Session 2</td>
+        <td class="header" colspan="3">1630-1730: Session 2</td>
       </tr>
       </tr>
         <tr>
-        <td class="info">1600-1630</td>
+        <td class="info">1630-1700</td>
         <td class="info">Philip Ginsbach (University of Edinburgh)</td>
         <td class="title">CAnDL: A Domain Specific Language for Compiler Analysis</td>
       </tr>
@@ -215,7 +254,7 @@ This work looks at ways to optimise program variant generation and selection in 
         </td>
       </tr>
       <tr>
-        <td class="info">1630-1700</td>
+        <td class="info">1700-1730</td>
         <td class="info">Yasir Alguwaifli (University of St Andrews)</td>
         <td class="title">Energy Usage for Parallel Haskell Programs</td>
       </tr>
@@ -224,7 +263,7 @@ This work looks at ways to optimise program variant generation and selection in 
         </td>
       </tr>
       <tr>
-        <td class="header" colspan="3">1700+ Pub/Dinner</td>
+        <td class="header" colspan="3">1730+ Pub/Dinner</td>
       </tr>
     </table>
   </section>
